@@ -1,0 +1,30 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+//        maven {
+//            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+//            authentication {
+//                basic(BasicAuthentication)
+//            }
+//            credentials {
+//                // Do not change the username below.
+//                // This should always be `mapbox` (not your username).
+//                username = "mapbox"
+//                // Use the secret token you stored in gradle.properties as the password
+//                password = "pk.eyJ1IjoiZHgtc3VwcG9ydCIsImEiOiJjbGtmZ211amExMmxxM2t1OGRncm9iMnh1In0.F_1LNv9UKmVXO9UEgUmHBw"
+//             }
+//        }
+    }
+    dependencies {
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
+    }
+}
+plugins {
+    id 'com.android.application' version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

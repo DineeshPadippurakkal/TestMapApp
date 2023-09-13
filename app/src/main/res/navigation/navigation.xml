@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.faircode.washpointapp.splash.SplashActivity"
+        android:label="Splash"
+        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.faircode.washpointapp.login.view.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        >
+        <action
+            android:id="@+id/action_loginFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.faircode.washpointapp.reset_password.view.ResetPasswordFragment"
+        android:label="Reset Password"
+        tools:layout="@layout/fragment_reset_password"/>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.faircode.washpointapp.forgotpassword.view.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password"/>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.faircode.washpointapp.home.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.faircode.washpointapp.home.view.HomeActivity"
+        android:label="HomeActivity"
+        tools:layout="@layout/activity_home"/>
+
+</navigation>

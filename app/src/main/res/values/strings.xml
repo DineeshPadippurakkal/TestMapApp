@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TestMapApp</string>
+
+    <string name="access_token">pk.eyJ1IjoiZHgtc3VwcG9ydCIsImEiOiJjbGtmZ211amExMmxxM2t1OGRncm9iMnh1In0.F_1LNv9UKmVXO9UEgUmHBw</string>
+
+</resources>
